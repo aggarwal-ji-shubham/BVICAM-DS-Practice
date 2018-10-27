@@ -1,25 +1,40 @@
-// to find pairs of given sum
+// to find all pairs of given sum
 import java.util.Arrays;
 class Pair_Sum
 {
 	public static void main(String [] args)
 	{
 	
-		int arr[]={7,2,3,5,6};
-		int ans=13;
+		int arr[]={0,2,3,5,6,7,9,21,43,52,53,54,55,56,57,58,59,60};
+		int ans=60;
+		//Array.sort(arr);
+		int j=0,n=arr.length-1;
+		System.out.println("total nos in your array are "+n);
 		for(int i=0;i<arr.length;i++)
 		{
-			int pair1=arr[i];
-			for(int j=0;j<arr.length;j++)
-			{
-				int sum=pair1+arr[j];
-				if(sum==ans)
-					System.out.println("max sum is "+pair1+" "+arr[j]);
-				
-			
-	
-			}
+				if(	(arr[j]+arr[n])<ans)
+				{
+					if(arr[j]+arr[n]==ans)
+					{
+					System.out.println("pairs are "+arr[j]+" "+arr[n]);	
+					//break;
+					}
+					j++;
+				}
+				else 
+				{
+					if(arr[j]+arr[n]==ans)
+					{
+					System.out.println("pairs are "+arr[j]+" "+arr[n]);	
+					//break;
+					}
+					
+						n--;
+						
+				}
+		
 		}
+		
 	}
 	
 }
