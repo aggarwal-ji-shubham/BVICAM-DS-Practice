@@ -1,0 +1,1 @@
+// find next geatest integer from same set of digiy

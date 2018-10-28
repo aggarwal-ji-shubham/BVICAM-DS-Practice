@@ -2,6 +2,7 @@
 import java.util.Scanner;
 class arms
 {
+p
 	public static void main(String args[])
 	{
 			System.out.println("enter a no");
