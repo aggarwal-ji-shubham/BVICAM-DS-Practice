@@ -1,5 +1,12 @@
 // pattern5
 // star pattern to increase in every line
+/*
+*
+**
+***
+****
+*****
+*/
 class Pattern5
 {
 	public static void main(String [] args)

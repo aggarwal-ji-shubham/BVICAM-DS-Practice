@@ -1,5 +1,14 @@
 // pattern4 
 // increase no of lines at each step
+/*
+7
+76
+765
+7654
+76543
+765432
+7654321
+*/
 class Pattern4
 {
 	public static void main(String [] args)
