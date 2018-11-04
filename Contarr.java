@@ -1,9 +1,8 @@
-// conuinous array sum
+//  find conuinous array max sum
 import java.util.Arrays;
 
 class Contarr
 {
-p
 	public static void main(String [] args)
 	{
 		int arr[]={10,20,5,-8,-4,52};
