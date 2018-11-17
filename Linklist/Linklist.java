@@ -77,7 +77,7 @@ class linkedStack
     {
         return size;
     }    
-   // push an element to the stack //
+   // push an element to the stack 
     public void push(int data)
     {
         Node nptr = new Node (data, null);
@@ -90,7 +90,7 @@ class linkedStack
         }
         size++ ;
     }    
-    /*  Function to pop an element from the stack */
+    // Function to pop an element from the stack 
     public int pop()
     {
         if (isEmpty() )
@@ -101,15 +101,15 @@ class linkedStack
         size-- ;
         return ptr.getData();
     }    
-    /*  Function to check the top element of the stack */
+    //  Function to check the top element of the stack 
     public int peek()
     {
         if (isEmpty() )
        System.out.println("e=underflow");    
-	   // throw new NoSuchElementException("Underflow Exception") ;
+   
         return top.getData();
     }    
-    /*  Function to display the status of the stack */
+    //  Function to display the status of the stack 
     public void display()
     {
         System.out.print("\nStack = ");
@@ -128,15 +128,15 @@ class linkedStack
     }
 }
  
-/* Class LinkedStackImplement */
+// Class LinkedStackImplement 
  class Linklist
 {    
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);   
-        /* Creating object of class linkedStack */   
+        // Creating object of class linkedStack  
         linkedStack ls = new linkedStack();          
-        /* Perform Stack Operations */  
+        // Perform Stack Operations 
         System.out.println("Linked Stack Test\n");  
         char ch;     
         do 
@@ -188,7 +188,7 @@ class linkedStack
                 System.out.println("Wrong Entry \n ");
                 break;
             }           
-            /* display stack */    
+            // display stack 
             ls.display();            
             System.out.println("\nDo you want to continue (Type y or n) \n");
             ch = scan.next().charAt(0);       
