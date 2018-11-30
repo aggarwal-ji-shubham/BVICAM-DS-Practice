@@ -22,6 +22,7 @@ class Queen1
 			}
 		return 1;
 	}
+		//main class
 	public static void main(String args[])
 	{
 		int chess[][]=new int[4][4];
